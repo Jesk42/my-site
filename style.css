@@ -1,0 +1,1 @@
+body{margin:0;background:#12051f;color:#fff;font-family:Arial}#stars{position:fixed;inset:0;z-index:-1}nav{display:flex;gap:10px;padding:12px;background:#1d1030aa;backdrop-filter:blur(8px)}button{background:#6d2cff;color:#fff;border:0;padding:10px 16px;border-radius:10px;cursor:pointer}button:hover{box-shadow:0 0 15px #b06cff}.tab{display:none;padding:30px}.active{display:block}

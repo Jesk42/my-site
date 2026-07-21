@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neon Music</title><link rel="stylesheet" href="style.css">
+</head><body>
+<canvas id="stars"></canvas>
+<nav>
+<button data-tab="home">🏠 Главная</button>
+<button data-tab="music">🎵 Музыка</button>
+<button data-tab="video">🎥 Видео</button>
+<button data-tab="about">👤 Обо мне</button>
+</nav>
+<main>
+<section id="home" class="tab active"><h1>Neon Music</h1><p>Добро пожаловать!</p></section>
+<section id="music" class="tab"><h2>Музыка</h2><audio id="player" controls src="music.mp3"></audio></section>
+<section id="video" class="tab"><h2>Видео</h2><p>Вставь сюда YouTube iframe.</p></section>
+<section id="about" class="tab"><h2>Обо мне</h2><p>Я — создатель этого сайта.</p></section>
+</main><script src="script.js"></script></body></html>

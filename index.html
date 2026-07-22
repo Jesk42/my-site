@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neon Site</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<div class="glow-orb orb-1"></div>
+<div class="glow-orb orb-2"></div>
+
+<audio id="bgMusic" src="background.mp3" loop></audio>
+
+<!-- SITE TITLE (easter egg trigger) -->
+<button class="brand" id="brandBtn" aria-label="NEON.SITE">
+  <span class="brand-dot"></span>
+  <span class="brand-text">NEON<span>.SITE</span></span>
+</button>
+
+<!-- SIDEBAR NAV -->
+<nav class="sidebar" id="sidebar">
+  <button class="side-btn active" data-tab="home">
+    <span class="side-icon">⌂</span>
+    <span class="side-label">Главная</span>
+  </button>
+  <button class="side-btn" data-tab="about">
+    <span class="side-icon">☺</span>
+    <span class="side-label">Обо мне</span>
+  </button>
+  <span class="side-indicator"></span>
+</nav>
+
+<main class="content">
+
+  <!-- HOME -->
+  <section id="home" class="tab active">
+    <div class="hero">
+      <p class="eyebrow reveal">// добро пожаловать</p>
+      <h1 class="hero-title reveal">
+        <span class="hero-line">NEON</span>
+        <span class="hero-line hero-accent">SITE</span>
+      </h1>
+      <p class="hero-sub reveal">Личный уголок в фиолетовом свечении.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="tab">
+    <div class="panel glass reveal-panel about-panel">
+      <p class="panel-eyebrow">// обо мне</p>
+      <h2 class="panel-title">Захар</h2>
+      <p class="panel-text">
+        Привееее меня зовут Захар я решил создать тот сайт по приколу чтоб развлечься.
+        Если что-то хотите добавить — пишите мне в тг.
+      </p>
+      <a href="https://t.me/Udggwf" target="_blank" rel="noopener" class="btn btn-primary tg-btn">
+        <span class="tg-icon">✈</span> Telegram: @Udggwf
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- EASTER EGG MODAL -->
+<div class="egg-overlay" id="eggOverlay">
+  <div class="egg-card glass">
+    <button class="egg-close" id="eggClose" aria-label="Закрыть">×</button>
+    <img src="easter-egg.jpg" alt="Пасхалка" class="egg-img">
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

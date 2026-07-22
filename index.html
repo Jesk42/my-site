@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neon Site</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<div class="glow-orb orb-1"></div>
+<div class="glow-orb orb-2"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-dot"></span>
+    <span class="brand-text">NEON<span>.SITE</span></span>
+  </div>
+  <nav class="nav glass" id="nav">
+    <button class="nav-btn active" data-tab="home">Главная</button>
+    <button class="nav-btn" data-tab="music">Музыка</button>
+    <button class="nav-btn" data-tab="video">Видео</button>
+    <button class="nav-btn" data-tab="about">Обо мне</button>
+    <span class="nav-indicator"></span>
+  </nav>
+</header>
+
+<main class="content">
+
+  <!-- HOME -->
+  <section id="home" class="tab active">
+    <div class="hero">
+      <p class="eyebrow reveal">// добро пожаловать</p>
+      <h1 class="hero-title reveal">
+        <span class="hero-line">NEON</span>
+        <span class="hero-line hero-accent">MUSIC</span>
+      </h1>
+      <p class="hero-sub reveal">Личный уголок в фиолетовом свечении — музыка, видео и немного обо мне.</p>
+      <div class="hero-cta reveal">
+        <button class="btn btn-primary" data-goto="music">Слушать музыку</button>
+        <button class="btn btn-ghost" data-goto="about">Узнать больше</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUSIC -->
+  <section id="music" class="tab">
+    <div class="panel glass reveal-panel">
+      <p class="panel-eyebrow">// плеер</p>
+      <h2 class="panel-title">Музыка</h2>
+      <p class="panel-text">Включи трек и погрузись в неоновую атмосферу.</p>
+
+      <div class="player">
+        <div class="equalizer" id="equalizer">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="player-controls">
+          <button class="btn btn-primary btn-round" id="playBtn">▶ Включить музыку</button>
+          <button class="btn btn-ghost btn-round" id="pauseBtn">⏸ Выключить музыку</button>
+        </div>
+        <audio id="audio" src="music.mp3" loop></audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section id="video" class="tab">
+    <div class="panel-header reveal-panel">
+      <p class="panel-eyebrow">// видео</p>
+      <h2 class="panel-title">Видео</h2>
+      <p class="panel-text">Пара роликов, которые стоит посмотреть.</p>
+    </div>
+    <div class="video-grid">
+      <div class="video-card glass">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/GpQSUjNsNm0?si=VDvt1bTPW2Jjv_mG" title="Видео 1" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="video-card glass">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/Efy-eBdouWk?si=Sp0v5LZmY-KR8GAY" title="Видео 2" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="tab">
+    <div class="panel glass reveal-panel about-panel">
+      <p class="panel-eyebrow">// обо мне</p>
+      <h2 class="panel-title">Заха</h2>
+      <p class="panel-text">
+        Привет! Меня зовут Заха. Я люблю делать сайты, интересуюсь технологиями
+        и постоянно изучаю что-то новое. Этот сайт — мой личный проект,
+        который я постепенно улучшаю.
+      </p>
+      <a href="https://t.me/Udggwf" target="_blank" rel="noopener" class="btn btn-primary tg-btn">
+        <span class="tg-icon">✈</span> Telegram: @Udggwf
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
